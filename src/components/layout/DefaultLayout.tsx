@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import ScrollToTop from './ScrollToTop';
-import Header from '@/components/shared/Header';
-import Footer from '@/components/shared/Footer';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import Spinner from '@/assets/svgs/spinner.svg?react';
 import { Toaster } from '@/components/ui/toaster';
 
