@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full border-t border-gray-medium pt-16 pb-8">
-      <div className="max-w-[1600px] mx-auto w-full px-6 md:px-20">
+      <div className="page-container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16">
           <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
             <Link to="/">
@@ -61,12 +61,17 @@ export default function Footer() {
         </div>
 
         <div className="py-8 text-center flex flex-col items-center gap-4">
-          <a href="https://www.themoviedb.org" target="_blank" rel="noreferrer">
-            <img src={tmdb} alt="Logo do site TMDB" className="w-72" />
+          <a href="https://www.themoviedb.org" target="_blank" rel="noreferrer noopener">
+            <img src={tmdb} alt="Logo do site TMDB" className="w-72 hover:scale-110 transition-transform duration-300 transform-gpu" />
           </a>
           <p className="text-white text-base">
-            Este projeto utiliza a API do <strong>The Movie Database (TMDB)</strong> para obtenção de dados
-            sobre filmes e séries. O TMDB <strong> não endossa, certifica ou é responsável por este projeto.</strong>
+            Este projeto utiliza a API do{' '}
+            <strong>The Movie Database (TMDB)</strong> para obtenção de dados
+            sobre filmes e séries. O TMDB{' '}
+            <strong>
+              {' '}
+              não endossa, certifica ou é responsável por este projeto.
+            </strong>
           </p>
         </div>
 

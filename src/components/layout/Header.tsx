@@ -19,13 +19,13 @@ export default function Header() {
                   backdrop-blur-[20px]
                   sticky top-0 left-0 right-0 z-50"
     >
-      <nav className="flex flex-col items-center md:flex-row md:justify-between max-w-[1600px] mx-auto w-full px-6 md:px-20 py-4">
+      <nav className="flex flex-col items-center md:flex-row md:justify-between page-container py-4">
         <div className="flex justify-between items-center w-full md:w-auto">
           <Link to="/" className="flex-shrink-0">
             <img
               src={logo}
               alt="Logo do site CineList"
-              className="h-[30px] w-auto accent"
+              className="h-[26px] w-auto accent"
             />
           </Link>
 
